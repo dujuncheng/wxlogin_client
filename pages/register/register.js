@@ -48,7 +48,9 @@ Page({
 			content: '登录态已经存入storage中',
 			showCancel: false,
 			success: () => {
-				wx.redirectTo()
+				wx.redirectTo({
+					url: '/pages/person/person'
+				})
 			}
 		})
 		
