@@ -94,7 +94,29 @@ Page({
 						'content-type': 'application/json' // 默认值
 					},
 					success(res) {
-						console.log(res.data)
+						let result = res.data;
+						if (!result || !result.success || !result.data) {
+							wx.showToast({
+								title: '网络请求失败'
+							})
+							return
+						}
+						
+						let session = result.data.session
+						
+						// 存入缓存中 官方文档 https://developers.weixin.qq.com/miniprogram/dev/api/wx.removeStorageSync.html
+						wx.setStorageSync('cache_session', session)
+						
+						wx.showModal({
+							title: '注册成功',
+							content: '登录态已经存入storage中, 点击确认跳到个人信息页面',
+							showCancel: false,
+							success: () => {
+								wx.redirectTo({
+									url: '/pages/person/person'
+								})
+							}
+						})
 					}
 				})
 			}

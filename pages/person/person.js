@@ -25,6 +25,7 @@ Page({
 		})
 	},
 	getInfo (session) {
+		let self = this;
 		if (!session) {
 			return
 		}
@@ -49,8 +50,8 @@ Page({
 					})
 					return
 				}
-				this.setData({
-					info: res.data,
+				self.setData({
+					info: result.data,
 				})
 			}
 		})

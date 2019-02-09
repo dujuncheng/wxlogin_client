@@ -13,7 +13,7 @@
 	<view class="item-block">
 		<view class="left">头像 </view>
 		<view class="right">
-			<text wx:if="{{info.avater}}">{{info.avater}}</text>
+			<image class="avater-img" src="{{info.avater}}" wx:if="{{info.avater}}" alt=""></image>
 			<button wx:if="{{!info.avater}}">点我授权</button>
 		</view>
 	</view>
@@ -26,7 +26,10 @@
 	</view>
 	<view class="item-block">
 		<view class="left">地址</view>
-		<view class="right">{{info.address}}</view>
+		<view class="right">
+			<text wx:if="{{info.address}}">{{info.address}}</text>
+			<button wx:if="{{!info.address}}">点我授权</button>
+		</view>
 	</view>
 	<view class="item-block">
 		<view class="left">邮箱 </view>
