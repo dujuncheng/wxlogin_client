@@ -38,7 +38,6 @@ Page({
 	 * 点击输入的按钮
 	 */
 	submit () {
-		debugger
 		if (!this.data.email || !(checkEmail(this.data.email))) {
 			wx.showToast({
 				title: '请输入正确的email'
@@ -53,7 +52,6 @@ Page({
 		}
 		wx.login({
 			success: res => {
-				debugger
 				// 发送 res.code 到后台换取 openId, sessionKey, unionId
 				if (!res || !res.code) {
 					wx.showToast({
@@ -65,9 +63,11 @@ Page({
 					code: res.code,
 					email: this.data.email,
 					password: this.data.password,
+					method: 'wx_register',
+					type: '1'
 				}
 				wx.request({
-					url: 'http://127.0.0.1:85/notebook?method=wx_register',
+					url: 'http://127.0.0.1:85/notebook',
 					data: params,
 					header: {
 						'content-type': 'application/json' // 默认值
