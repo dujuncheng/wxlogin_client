@@ -99,7 +99,7 @@ Page({
 					email: this.data.email,
 					password: this.data.password,
 					method: 'wx_register',
-					type: '1'
+					type,
 				}
 				wx.request({
 					url: 'http://127.0.0.1:85/notebook',
