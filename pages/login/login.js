@@ -71,12 +71,14 @@ Page({
 			console.log(userInfo)
 		}
 	},
+	/**
+	 * 登录
+	 */
 	getLogin() {
-		// 登录
+		// 先拿到code 发送 res.code 到后台换取 openId, sessionKey,
 		wx.login({
 			success: res => {
-				// 发送 res.code 到后台换取 openId, sessionKey, unionId
-				if (!res || !res.code1) {
+				if (!res || !res.code) {
 					wx.showToast({
 						title: '调用登录方法失败',
 					})
@@ -86,11 +88,8 @@ Page({
 					code: res.code
 				}
 				wx.request({
-					url: '',
-					data: {
-						x: '',
-						y: ''
-					},
+					url: 'http://127.0.0.1:85/notebook?method=wx_login',
+					data: params,
 					header: {
 						'content-type': 'application/json' // 默认值
 					},
