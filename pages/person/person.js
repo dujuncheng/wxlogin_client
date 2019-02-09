@@ -39,7 +39,13 @@ Page({
 				if (!result || !result.success || !result.data) {
 					wx.showModal({
 						title: '出错了',
-						content: `${result.message}, 点击确认去往【登录】`
+						content: `${result.message}, 点击确认去往【登录】`,
+						showCancel: false,
+						success: () => {
+							wx.redirectTo({
+								url: '/pages/login/login'
+							})
+						}
 					})
 					return
 				}

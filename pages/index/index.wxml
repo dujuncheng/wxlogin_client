@@ -22,9 +22,5 @@
 		>
 			未授权，点击可授权获取你的信息
 		</button>
-		<!--<block wx:else>-->
-		<!--<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>-->
-		<!--<text class="userinfo-nickname">{{userInfo.nickName}}</text>-->
-		<!--</block>-->
 	</view>
 </view>

@@ -1,27 +1,38 @@
 <view class="person-container">
 	<view class="item-block">
 		<view class="left">用户id: </view>
-		<view class="right">11</view>
+		<view class="right">{{info.id}}</view>
 	</view>
 	<view class="item-block">
 		<view class="left">用户openid: </view>
-		<view class="right">11211</view>
+		<view class="right">
+			<text wx:if="{{info.openid}}">{{info.openid}}</text>
+			<button wx:if="{{!info.openid}}">点我授权</button>
+		</view>
 	</view>
 	<view class="item-block">
 		<view class="left">头像 </view>
-		<view class="right">11211</view>
+		<view class="right">
+			<text wx:if="{{info.avater}}">{{info.avater}}</text>
+			<button wx:if="{{!info.avater}}">点我授权</button>
+		</view>
 	</view>
 	<view class="item-block">
 		<view class="left">昵称 </view>
-		<view class="right">11211</view>
+		<view class="right">
+			<text wx:if="{{info.nickname}}">{{info.nickname}}</text>
+			<button wx:if="{{!info.nickname}}">点我授权</button>
+		</view>
 	</view>
 	<view class="item-block">
-		<view class="left">地址 </view>
-		<view class="right">11211</view>
+		<view class="left">地址</view>
+		<view class="right">{{info.address}}</view>
 	</view>
 	<view class="item-block">
 		<view class="left">邮箱 </view>
-		<view class="right">11211</view>
+		<view class="right">
+			<text wx:if="info.email">{{info.email}}</text>
+		</view>
 	</view>
 	<view class="item-block">
 		<view class="left">创建时间 </view>
