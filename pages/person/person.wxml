@@ -1,0 +1,3 @@
+<view class="person-container">
+	{{name}}sssss
+</view>
