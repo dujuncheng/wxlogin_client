@@ -49,7 +49,12 @@ Page({
 		if (e.detail && e.detail.userInfo) {
 			let userInfo = e.detail.userInfo;
 			console.log(userInfo)
-			this.submit({type:2})
+			this.submit({
+				type:2,
+				avater: userInfo.avatarUrl,
+				nickname: userInfo.nickName,
+				address: userInfo.province,
+			})
 		}
 	},
 	handleSubmit () {
