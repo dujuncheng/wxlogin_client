@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2ce89bb-c602-494a-aebd-a3130c81daf6" name="Default Changelist" comment="" />
+    <list default="true" id="b2ce89bb-c602-494a-aebd-a3130c81daf6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/buwang.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/LK513.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/index/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/index/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/index/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/index/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/logs/logs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/logs/logs.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/logs/logs.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/logs/logs.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/register/register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/register/register.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/register/register.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/register/register.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/project.config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/util.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -24,6 +51,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="gitignore" value="1" />
           <entry key="js" value="9" />
           <entry key="json" value="4" />
           <entry key="wxml" value="2" />
@@ -35,12 +63,13 @@
           <entry key="HTML" value="2" />
           <entry key="JSON" value="4" />
           <entry key="JavaScript" value="9" />
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="PLAIN_TEXT" value="5" />
           <entry key="Wxss" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="gitignore" value="28" />
           <entry key="js" value="1717" />
           <entry key="json" value="9" />
           <entry key="wxml" value="391" />
@@ -52,7 +81,7 @@
           <entry key="HTML" value="391" />
           <entry key="JSON" value="9" />
           <entry key="JavaScript" value="1717" />
-          <entry key="PLAIN_TEXT" value="83" />
+          <entry key="PLAIN_TEXT" value="111" />
           <entry key="Wxss" value="150" />
         </counts>
       </usages-collector>
@@ -99,11 +128,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/register/register.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
+            <state relative-caret-position="313">
+              <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="19">
+              <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -122,15 +160,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="76">
               <caret line="4" column="22" lean-forward="true" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="28" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -167,6 +196,9 @@
       <find>getLogin</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -180,6 +212,7 @@
         <option value="$PROJECT_DIR$/pages/register/register.wxss" />
         <option value="$PROJECT_DIR$/pages/register/register.wxml" />
         <option value="$PROJECT_DIR$/pages/register/register.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -221,6 +254,7 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -233,28 +267,6 @@
             <path>
               <item name="buwang" type="b2602c69:ProjectViewProjectNode" />
               <item name="buwang" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="buwang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="buwang" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="buwang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="buwang" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="buwang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="buwang" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="register" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="buwang" type="b2602c69:ProjectViewProjectNode" />
-              <item name="buwang" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -299,18 +311,18 @@
       <workItem from="1549511444210" duration="1572000" />
       <workItem from="1549513078630" duration="1986000" />
       <workItem from="1549642389994" duration="128000" />
-      <workItem from="1549642593721" duration="2524000" />
+      <workItem from="1549642593721" duration="2729000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8591000" />
+    <option name="totallyTimeSpent" value="8796000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20225511" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20225511" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -321,8 +333,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32923833" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -427,8 +439,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/register/register.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="65" column="24" selection-start-line="65" selection-start-column="24" selection-end-line="65" selection-end-column="24" />
+        <state relative-caret-position="313">
+          <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
         </state>
       </provider>
     </entry>
