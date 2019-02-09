@@ -1,0 +1,23 @@
+.register-container {
+	width: 100%;
+	height: 100%;
+}
+
+.block-item {
+	flex-basis: 100%;
+	height: 50rpx;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	margin-top: 100rpx;
+	color: gray;
+}
+
+.text-input {
+	border-bottom: 1px solid gray;
+}
+
+.submit-btn {
+	width: 80%;
+	margin-top: 100rpx;
+}

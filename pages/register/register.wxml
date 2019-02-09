@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="register-container">
+	<view class="block-item">
+		邮箱：<input class="text-input" type="text" placeholder="请输入邮箱地址"  bindinput="bindEmailInput" focus />
+	</view>
+	<view class="block-item">
+		密码：<input class="text-input"  type="text" placeholder="请输入6位以上的密码"  bindinput="bindPasswordInput" focus />
+	</view>
+	<button class="submit-btn" type="primary" bindtap="submit">注册</button>
+</view>
