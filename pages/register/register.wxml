@@ -6,5 +6,9 @@
 	<view class="block-item">
 		密码：<input class="text-input"  type="text" placeholder="请输入6位以上的密码"  bindinput="bindPasswordInput" focus />
 	</view>
-	<button class="submit-btn" type="primary" bindtap="submit">注册</button>
+	<!-- 普通注册  -->
+	<button class="submit-btn" type="primary" bindtap="handleSubmit">普通注册</button>
+	<!-- 授权注册 -->
+	<button class="submit-btn" type="primary" open-type="getUserInfo"
+			bindgetuserinfo="getUserInfo">授权注册(获取头像昵称)</button>
 </view>

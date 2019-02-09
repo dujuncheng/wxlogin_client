@@ -35,15 +35,42 @@ Page({
 		})
 	},
 	/**
+	 * 获取用户信息
+	 * @param e
+	 */
+	getUserInfo: function (e) {
+		// 用户拒绝授权
+		if (e.detail && !e.detail.userInfo ) {
+			wx.showToast({
+				title: '你拒绝了授权',
+			})
+			return
+		}
+		if (e.detail && e.detail.userInfo) {
+			let userInfo = e.detail.userInfo;
+			console.log(userInfo)
+			this.submit({type:2})
+		}
+	},
+	handleSubmit () {
+		this.submit({type: 1})
+	},
+	/**
 	 * 点击输入的按钮
 	 */
-	submit () {
+	submit ({type, address = '', nickname = '', avater = ''}) {
+		// 如果是授权登录，则必须有 address, nickname avater 参数
+		if ((type === 2) && (!address || !nickname || !avater)) {
+			return
+		}
+		// 校验邮箱
 		if (!this.data.email || !(checkEmail(this.data.email))) {
 			wx.showToast({
 				title: '请输入正确的email'
 			})
 			return;
 		}
+		// 校验密码
 		if (!this.data.password || this.data.password.length < 6) {
 			wx.showToast({
 				title: '请输入正确的密码'
@@ -61,6 +88,9 @@ Page({
 				}
 				let params = {
 					code: res.code,
+					avater: avater || '',
+					nickname: nickname || '',
+					address: address || '',
 					email: this.data.email,
 					password: this.data.password,
 					method: 'wx_register',
@@ -76,8 +106,10 @@ Page({
 						debugger
 						let result = res.data
 						if (!result.success || !result.data) {
-							wx.showToast({
-								title: result.message || '注册失败'
+							wx.showModal({
+								title: result.message || '注册失败',
+								content: '您的账号已经被注册，请直接登录',
+								showCancel: false,
 							})
 							return
 						}
@@ -90,7 +122,7 @@ Page({
 						
 						wx.showModal({
 							title: '注册成功',
-							content: '登录态已经存入storage中',
+							content: '登录态已经存入storage中, 点击确认跳到个人信息页面',
 							showCancel: false,
 							success: () => {
 								wx.redirectTo({
