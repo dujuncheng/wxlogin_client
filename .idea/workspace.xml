@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="b2ce89bb-c602-494a-aebd-a3130c81daf6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login/login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/person/person.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/person/person.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/person/person.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/pages/person/person.wxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/person/person.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/person/person.wxss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/register/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/register/register.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -21,19 +21,20 @@
     <session id="-2080366830">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="30" />
-          <entry key="project.open.time.0" value="27" />
+          <entry key="project.closed" value="31" />
+          <entry key="project.open.time.0" value="29" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.59" value="1" />
-          <entry key="project.opened" value="30" />
+          <entry key="project.opened" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="js" value="18" />
+          <entry key="js" value="19" />
           <entry key="json" value="9" />
+          <entry key="ts" value="1" />
           <entry key="wxml" value="9" />
           <entry key="wxss" value="12" />
         </counts>
@@ -42,15 +43,16 @@
         <counts>
           <entry key="HTML" value="9" />
           <entry key="JSON" value="9" />
-          <entry key="JavaScript" value="18" />
+          <entry key="JavaScript" value="19" />
           <entry key="PLAIN_TEXT" value="5" />
+          <entry key="TypeScript" value="1" />
           <entry key="Wxss" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gitignore" value="28" />
-          <entry key="js" value="5616" />
+          <entry key="js" value="5822" />
           <entry key="json" value="20" />
           <entry key="wxml" value="1323" />
           <entry key="wxss" value="488" />
@@ -60,7 +62,7 @@
         <counts>
           <entry key="HTML" value="1323" />
           <entry key="JSON" value="20" />
-          <entry key="JavaScript" value="5616" />
+          <entry key="JavaScript" value="5822" />
           <entry key="PLAIN_TEXT" value="111" />
           <entry key="Wxss" value="405" />
         </counts>
@@ -70,19 +72,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/person/person.js">
+        <entry file="file://$PROJECT_DIR$/pages/register/register.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="123" column="21" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="21" />
+            <state relative-caret-position="2147">
+              <caret line="114" column="42" selection-start-line="114" selection-start-column="28" selection-end-line="114" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pages/register/register.js">
+        <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="100" column="48" selection-start-line="100" selection-start-column="48" selection-end-line="100" selection-end-column="48" />
+            <state relative-caret-position="379">
+              <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -90,8 +92,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pages/login/login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2622">
-              <caret line="138" column="40" selection-start-line="138" selection-start-column="36" selection-end-line="138" selection-end-column="40" />
+            <state relative-caret-position="36">
+              <caret line="133" column="24" selection-start-line="133" selection-start-column="24" selection-end-line="133" selection-end-column="24" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -100,10 +102,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/person/person.wxss">
+        <entry file="jar://$APPLICATION_PLUGINS_DIR$/weapp-support-plugin.jar!/lib/weixin-app/index.d.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+            <state relative-caret-position="98135">
+              <caret line="5171" column="17" selection-start-line="5171" selection-start-column="17" selection-end-line="5171" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -166,14 +168,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>wx.</find>
-      <find>setData</find>
-      <find>canUserInfo</find>
-      <find>container</find>
-      <find>wx:if</find>
-      <find>bindEmailInput</find>
-      <find>wx.request</find>
-      <find>debugger</find>
       <find>avater</find>
       <find>submit-btn</find>
       <find>div</find>
@@ -196,6 +190,14 @@
       <find>getInfo</find>
       <find>debu</find>
       <find>handleWriteoff</find>
+      <find>http://127.0.0.1:85/notebook</find>
+      <find>grobalData</find>
+      <find>12</find>
+      <find>self.globalData.url</find>
+      <find>globalData</find>
+      <find>app</find>
+      <find>self.global</find>
+      <find>loading</find>
     </findStrings>
     <replaceStrings>
       <replace>view</replace>
@@ -207,7 +209,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/app.wxss" />
         <option value="$PROJECT_DIR$/pages/index/index.wxss" />
         <option value="$PROJECT_DIR$/pages/index/index.js" />
@@ -220,13 +221,14 @@
         <option value="$PROJECT_DIR$/pages/login/login.json" />
         <option value="$PROJECT_DIR$/pages/index/index.wxml" />
         <option value="$PROJECT_DIR$/pages/login/login.wxss" />
-        <option value="$PROJECT_DIR$/pages/login/login.js" />
         <option value="$PROJECT_DIR$/pages/login/login.wxml" />
         <option value="$PROJECT_DIR$/pages/register/register.wxml" />
         <option value="$PROJECT_DIR$/pages/person/person.wxss" />
         <option value="$PROJECT_DIR$/pages/person/person.wxml" />
         <option value="$PROJECT_DIR$/pages/person/person.js" />
         <option value="$PROJECT_DIR$/pages/register/register.js" />
+        <option value="$PROJECT_DIR$/pages/login/login.js" />
+        <option value="$PROJECT_DIR$/app.js" />
       </list>
     </option>
   </component>
@@ -274,6 +276,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -296,7 +299,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -361,17 +363,19 @@
       <workItem from="1549785972851" duration="558000" />
       <workItem from="1549790487467" duration="207000" />
       <workItem from="1549791022457" duration="167000" />
+      <workItem from="1549791738736" duration="1098000" />
+      <workItem from="1549794310098" duration="15000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17735000" />
+    <option name="totallyTimeSpent" value="18848000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20225511" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20225511" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -382,8 +386,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32923833" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32923833" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.24570024" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.0" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -406,13 +410,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/util.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="28" selection-end-column="9" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/register/api.js" />
     <entry file="file://$PROJECT_DIR$/pages/index/api.js" />
@@ -484,18 +481,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/person/person.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
+        <state relative-caret-position="2337">
           <caret line="123" column="21" selection-start-line="123" selection-start-column="21" selection-end-line="123" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/login/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2622">
-          <caret line="138" column="40" selection-start-line="138" selection-start-column="36" selection-end-line="138" selection-end-column="40" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -503,6 +490,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/register/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2147">
+          <caret line="114" column="42" selection-start-line="114" selection-start-column="28" selection-end-line="114" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_PLUGINS_DIR$/weapp-support-plugin.jar!/lib/weixin-app/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98135">
+          <caret line="5171" column="17" selection-start-line="5171" selection-start-column="17" selection-end-line="5171" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -548,10 +549,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/register/register.js">
+    <entry file="file://$PROJECT_DIR$/pages/login/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="100" column="48" selection-start-line="100" selection-start-column="48" selection-end-line="100" selection-end-column="48" />
+        <state relative-caret-position="36">
+          <caret line="133" column="24" selection-start-line="133" selection-start-column="24" selection-end-line="133" selection-end-column="24" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
         </state>
       </provider>
     </entry>

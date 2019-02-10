@@ -1,6 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
+console.log(app)
 
 Page({
 	data: {
@@ -92,6 +93,7 @@ Page({
 	 * 登录
 	 */
 	getLogin(params) {
+		let self = this;
 		// 先拿到code 发送 res.code 到后台换取 openId, sessionKey,
 		wx.login({
 			success: res => {
@@ -103,7 +105,7 @@ Page({
 				}
 				params.code = res.code;
 				wx.request({
-					url: 'http://127.0.0.1:85/notebook?method=wx_login',
+					url: `${app.globalData.url}?method=wx_login`,
 					data: params,
 					header: {
 						'content-type': 'application/json' // 默认值

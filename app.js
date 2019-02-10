@@ -29,6 +29,7 @@ App({
     // })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+	url: 'https://bi15s.cn/wxlogin'
   }
 })

@@ -1,3 +1,4 @@
+let app = getApp();
 Page({
 	data: {
 		name: 'dudu',
@@ -42,6 +43,7 @@ Page({
 	 * 登录
 	 */
 	getLogin(params) {
+		console.log(this.globalData)
 		let self = this;
 		// 先拿到code 发送 res.code 到后台换取 openId, sessionKey,
 		wx.login({
@@ -54,7 +56,7 @@ Page({
 				}
 				params.code = res.code;
 				wx.request({
-					url: 'http://127.0.0.1:85/notebook?method=wx_login',
+					url: `${app.globalData.url}?method=wx_login`,
 					data: params,
 					header: {
 						'content-type': 'application/json' // 默认值
@@ -132,7 +134,7 @@ Page({
 			return
 		}
 		wx.request({
-			url: 'http://127.0.0.1:85/notebook?method=wx_logout',
+			url: `${app.globalData.url}?method=wx_logout`,
 			header: {
 				'content-type': 'application/json',
 				'x-session': session
@@ -173,7 +175,7 @@ Page({
 			return
 		}
 		wx.request({
-			url: 'http://127.0.0.1:85/notebook?method=wx_writeoff',
+			url: `${app.globalData.url}?method=wx_writeoff`,
 			header: {
 				'content-type': 'application/json',
 				'x-session': session
@@ -241,7 +243,7 @@ Page({
 			return
 		}
 		wx.request({
-			url: 'http://127.0.0.1:85/notebook?method=wx_userinfo',
+			url: `${app.globalData.url}?method=wx_userinfo`,
 			header: {
 				'content-type': 'application/json',
 				'x-session': session

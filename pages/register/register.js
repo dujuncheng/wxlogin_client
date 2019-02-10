@@ -68,10 +68,11 @@ Page({
 	 * 点击输入的按钮
 	 */
 	submit ({type, address = '', nickname = '', avater = ''}) {
-		if (this.grobal.loading) {
+		let self = this;
+		if (grobal.loading) {
 			return;
 		}
-		this.grobal.loading = true
+		grobal.loading = true
 		// 如果是授权登录，则必须有 address, nickname avater 参数
 		if ((type === 2) && (!address || !nickname || !avater)) {
 			return
@@ -98,7 +99,7 @@ Page({
 						title: '调用登录方法失败',
 					})
 					return
-					this.grobal.loading = false;
+					grobal.loading = false;
 				}
 				let params = {
 					code: res.code,
@@ -111,13 +112,13 @@ Page({
 					type,
 				}
 				wx.request({
-					url: 'http://127.0.0.1:85/notebook',
+					url: app.globalData.url,
 					data: params,
 					header: {
 						'content-type': 'application/json' // 默认值
 					},
 					success(res) {
-						this.grobal.loading = false
+						grobal.loading = false
 						let result = res.data
 						if (!result.success || !result.data) {
 							wx.showModal({
