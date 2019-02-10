@@ -75,6 +75,7 @@ Page({
 		grobal.loading = true
 		// 如果是授权登录，则必须有 address, nickname avater 参数
 		if ((type === 2) && (!address || !nickname || !avater)) {
+			grobal.loading = false
 			return
 		}
 		// 校验邮箱
@@ -82,6 +83,7 @@ Page({
 			wx.showToast({
 				title: '请输入正确的email'
 			})
+			grobal.loading = false
 			return;
 		}
 		// 校验密码
@@ -89,6 +91,7 @@ Page({
 			wx.showToast({
 				title: '请输入正确的密码'
 			})
+			grobal.loading = false
 			return
 		}
 		wx.login({

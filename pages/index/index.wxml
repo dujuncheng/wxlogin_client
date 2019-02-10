@@ -1,26 +1,6 @@
 <!--index.wxml-->
 <view class="container">
 	<view class="userinfo">
-		<button bindtap="getLogin">登录</button>
-
-		<!-- 已经授权过 -->
-		<button class="auth-btn"
-				type="primary"
-				open-type="getUserInfo"
-				bindgetuserinfo="getUserInfo"
-				wx:if="{{canUserInfo}}"
-		>
-			已授权，可直接获取你的信息
-		</button>
-
-		<!-- 没有授权过 -->
-		<button class="auth-btn"
-				type="warn"
-				open-type="getUserInfo"
-				bindgetuserinfo="getUserInfo"
-				wx:if="{{!canUserInfo}}"
-		>
-			未授权，点击可授权获取你的信息
-		</button>
+		<button bindtap="gohome">去我的主页</button>
 	</view>
 </view>
