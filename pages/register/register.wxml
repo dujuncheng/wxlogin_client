@@ -7,7 +7,7 @@
 		密码：<input class="text-input"  type="text" placeholder="请输入6位以上的密码"  bindinput="bindPasswordInput" focus />
 	</view>
 	<!-- 普通注册  -->
-	<button class="submit-btn-1" type="primary" bindtap="handleSubmit">普通注册</button>
+	<button class="submit-btn-1" type="primary" bindtap="handleSubmit">普通注册(不获取你的头像昵称)</button>
 	<!-- 授权注册 -->
 	<button class="submit-btn-2" type="primary" open-type="getUserInfo"
 			bindgetuserinfo="getUserInfo">授权注册(获取头像昵称)</button>

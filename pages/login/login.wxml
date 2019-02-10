@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="container">
 	<view class="userinfo">
-		<button bindtap="handleLogin">普通登录</button>
+		<button bindtap="handleLogin">普通登录(不获取你信息)</button>
 
 		<!-- 已经授权过 -->
 		<button class="auth-btn"
