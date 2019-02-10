@@ -39,6 +39,6 @@
 	</view>
 	<view class="item-block">
 		<view class="left">创建时间 </view>
-		<view class="right">11211</view>
+		<view class="right">{{info.gmt_created}}</view>
 	</view>
 </view>

@@ -99,6 +99,19 @@ Page({
 							wx.showToast({
 								title: '网络请求失败'
 							})
+							// err_code为1说明没有注册
+							if (result.err_code === 1) {
+								wx.showModal({
+									title:'你的账号没有注册呢',
+									content: '点击【确认】去往注册页面',
+									showCancel: false,
+									success: () => {
+										wx.redirectTo({
+											url: '/pages/register/register'
+										})
+									}
+								})
+							}
 							return
 						}
 						

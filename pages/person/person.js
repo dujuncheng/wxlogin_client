@@ -24,6 +24,15 @@ Page({
 			}
 		})
 	},
+	filterTime(info) {
+		if (!info.gmt_created) {
+			return info
+		}
+		let timeStamp = Number(info.gmt_created) * 1000;
+		let date = new Date(timeStamp);
+		info.gmt_created = String(date);
+		return info;
+	},
 	getInfo (session) {
 		let self = this;
 		if (!session) {
@@ -50,8 +59,9 @@ Page({
 					})
 					return
 				}
+				let info = self.filterTime(result.data);
 				self.setData({
-					info: result.data,
+					info,
 				})
 			}
 		})
