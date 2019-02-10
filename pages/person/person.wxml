@@ -6,29 +6,28 @@
 	<view class="item-block">
 		<view class="left">用户openid: </view>
 		<view class="right">
-			<text wx:if="{{info.openid}}">{{info.openid}}</text>
-			<button wx:if="{{!info.openid}}">点我授权</button>
+			<text>{{info.openid}}</text>
 		</view>
 	</view>
 	<view class="item-block">
 		<view class="left">头像 </view>
 		<view class="right">
-			<image class="avater-img" src="{{info.avater}}" wx:if="{{info.avater}}" alt=""></image>
-			<button wx:if="{{!info.avater}}">点我授权</button>
+			<image class="avater-img" src="{{info.avater}}" wx:if="{{info.avater != 0}}" alt=""></image>
+			<button wx:if="{{info.avater == 0}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">点我授权</button>
 		</view>
 	</view>
 	<view class="item-block">
 		<view class="left">昵称 </view>
 		<view class="right">
-			<text wx:if="{{info.nickname}}">{{info.nickname}}</text>
-			<button wx:if="{{!info.nickname}}">点我授权</button>
+			<text wx:if="{{info.nickname != 0}}">{{info.nickname}}</text>
+			<button wx:if="{{info.nickname == 0}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">点我授权</button>
 		</view>
 	</view>
 	<view class="item-block">
 		<view class="left">地址</view>
 		<view class="right">
-			<text wx:if="{{info.address}}">{{info.address}}</text>
-			<button wx:if="{{!info.address}}">点我授权</button>
+			<text wx:if="{{info.address != 0}}">{{info.address}}</text>
+			<button wx:if="{{info.address == 0}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">点我授权</button>
 		</view>
 	</view>
 	<view class="item-block">

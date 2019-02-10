@@ -108,7 +108,6 @@ Page({
 						'content-type': 'application/json' // 默认值
 					},
 					success(res) {
-						debugger
 						let result = res.data
 						if (!result.success || !result.data) {
 							wx.showModal({
