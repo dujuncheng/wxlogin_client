@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="container">
 	<view class="userinfo">
-		<button bindtap="getLogin">登录</button>
+		<button bindtap="handleLogin">普通登录</button>
 
 		<!-- 已经授权过 -->
 		<button class="auth-btn"
@@ -10,7 +10,7 @@
 				bindgetuserinfo="getUserInfo"
 				wx:if="{{canUserInfo}}"
 		>
-			已授权，可直接获取你的信息
+			已授权，本次获取你信息不需要授权，登录
 		</button>
 
 		<!-- 没有授权过 -->
@@ -20,7 +20,7 @@
 				bindgetuserinfo="getUserInfo"
 				wx:if="{{!canUserInfo}}"
 		>
-			未授权，点击可授权获取你的信息
+			未授权，需要弹窗授权，登录
 		</button>
 	</view>
 </view>

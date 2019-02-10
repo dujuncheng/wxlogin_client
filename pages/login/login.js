@@ -9,7 +9,6 @@ Page({
 		authInfo: {},
 		// 是否已经授权用户信息
 		canUserInfo: false,
-		canIUse: wx.canIUse('button.open-type.getUserInfo')
 	},
 	//事件处理函数
 	bindViewTap: function () {
@@ -68,13 +67,31 @@ Page({
 		}
 		if (e.detail && e.detail.userInfo) {
 			let userInfo = e.detail.userInfo;
-			console.log(userInfo)
+			let params = {
+				info: {
+					avater: userInfo.avatarUrl,
+					nickname: userInfo.nickName,
+					address: userInfo.province,
+				},
+				type: 2
+			}
+			this.getLogin(params);
 		}
+	},
+	/**
+	 * 响应点击事件
+	 */
+	handleLogin () {
+		// type 1 是普通登录 type 2是带用户信息的登录
+		let params = {
+			type: 1
+		}
+		this.getLogin(params);
 	},
 	/**
 	 * 登录
 	 */
-	getLogin() {
+	getLogin(params) {
 		// 先拿到code 发送 res.code 到后台换取 openId, sessionKey,
 		wx.login({
 			success: res => {
@@ -84,9 +101,7 @@ Page({
 					})
 					return
 				}
-				let params = {
-					code: res.code
-				}
+				params.code = res.code;
 				wx.request({
 					url: 'http://127.0.0.1:85/notebook?method=wx_login',
 					data: params,
