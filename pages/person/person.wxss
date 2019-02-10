@@ -5,6 +5,13 @@
 	align-items: center;
 }
 
+.btn-block {
+	height: 100rpx;
+	margin-top: 50rpx;
+	display: flex;
+	align-items: center;
+}
+
 .left {
 	flex: 1;
 	text-align: left;
@@ -25,4 +32,8 @@
 .avater-img {
 	width: 80rpx;
 	height: 80rpx;
+}
+
+.logout-btn {
+	width: 80%;
 }

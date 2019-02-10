@@ -40,4 +40,10 @@
 		<view class="left">创建时间 </view>
 		<view class="right">{{info.gmt_created}}</view>
 	</view>
+	<view class="btn-block">
+		<button class="logout-btn" type="primary" bindtap="handleLogout">登出</button>
+	</view>
+	<view class="btn-block">
+		<button class="logout-btn" type="warn" bindtap="handleWriteoff">注销</button>
+	</view>
 </view>

@@ -16,6 +16,10 @@ const checkEmail = (email) => {
 	}
 }
 
+const grobal = {
+	loading: false,
+}
+
 Page({
 	data: {
 		email: '',
@@ -64,6 +68,10 @@ Page({
 	 * 点击输入的按钮
 	 */
 	submit ({type, address = '', nickname = '', avater = ''}) {
+		if (this.grobal.loading) {
+			return;
+		}
+		this.grobal.loading = true
 		// 如果是授权登录，则必须有 address, nickname avater 参数
 		if ((type === 2) && (!address || !nickname || !avater)) {
 			return
@@ -90,6 +98,7 @@ Page({
 						title: '调用登录方法失败',
 					})
 					return
+					this.grobal.loading = false;
 				}
 				let params = {
 					code: res.code,
@@ -108,6 +117,7 @@ Page({
 						'content-type': 'application/json' // 默认值
 					},
 					success(res) {
+						this.grobal.loading = false
 						let result = res.data
 						if (!result.success || !result.data) {
 							wx.showModal({
