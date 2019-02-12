@@ -24,6 +24,8 @@ Page({
 	data: {
 		email: '',
 		password: '',
+		loading1: false,
+		loading2: false,
 	},
 	onLoad () {
 		console.log('onLoad')
@@ -69,6 +71,10 @@ Page({
 	 */
 	submit ({type, address = '', nickname = '', avater = ''}) {
 		let self = this;
+		this.setData({
+			loading1: true,
+			loading2: true,
+		})
 		if (grobal.loading) {
 			return;
 		}
@@ -96,6 +102,10 @@ Page({
 		}
 		wx.login({
 			success: res => {
+				self.setData({
+					loading1: true,
+					loading2: true,
+				})
 				// 发送 res.code 到后台换取 openId, sessionKey, unionId
 				if (!res || !res.code) {
 					wx.showToast({
