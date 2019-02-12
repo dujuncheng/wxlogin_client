@@ -13,7 +13,7 @@
 		<view class="left">头像 </view>
 		<view class="right">
 			<image class="avater-img" src="{{info.avater}}" wx:if="{{info.avater != 0}}" alt=""></image>
-			<button wx:if="{{info.avater == 0}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">点我授权</button>
+			<button wx:if="{{info.avater == 0}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" >点我授权</button>
 		</view>
 	</view>
 	<view class="item-block">
@@ -41,9 +41,9 @@
 		<view class="right">{{info.gmt_created}}</view>
 	</view>
 	<view class="btn-block">
-		<button class="logout-btn" type="primary" bindtap="handleLogout">登出</button>
+		<button class="logout-btn" type="primary" bindtap="handleLogout" loading="{{logoutLoading}}">登出(只是没了登录态，账号还在)</button>
 	</view>
 	<view class="btn-block">
-		<button class="logout-btn" type="warn" bindtap="handleWriteoff">注销</button>
+		<button class="logout-btn" type="warn" bindtap="handleWriteoff" loading="{{writeoffLoading}}">注销(这个账号没了，重新注册)</button>
 	</view>
 </view>

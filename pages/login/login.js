@@ -10,6 +10,10 @@ Page({
 		authInfo: {},
 		// 是否已经授权用户信息
 		canUserInfo: false,
+		// loading
+		loading1: false,
+		loading2: false,
+		loading3: false,
 	},
 	//事件处理函数
 	bindViewTap: function () {
@@ -76,6 +80,10 @@ Page({
 				},
 				type: 2
 			}
+			this.setData({
+				loading2: true,
+				loading3: true,
+			})
 			this.getLogin(params);
 		}
 	},
@@ -87,6 +95,9 @@ Page({
 		let params = {
 			type: 1
 		}
+		this.setData({
+			loading1: true,
+		})
 		this.getLogin(params);
 	},
 	/**
@@ -111,6 +122,11 @@ Page({
 						'content-type': 'application/json' // 默认值
 					},
 					success(res) {
+						self.setData({
+							loading1: false,
+							loading2: false,
+							loading3: false,
+						})
 						let result = res.data;
 						if (!result || !result.success || !result.data) {
 							wx.showToast({

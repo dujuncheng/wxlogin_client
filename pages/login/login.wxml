@@ -1,13 +1,14 @@
 <!--index.wxml-->
 <view class="container">
 	<view class="userinfo">
-		<button bindtap="handleLogin">普通登录(不获取你信息)</button>
+		<button bindtap="handleLogin" loading="{{loading1}}">普通登录(不获取你信息)</button>
 
 		<!-- 已经授权过 -->
 		<button class="auth-btn"
 				type="primary"
 				open-type="getUserInfo"
 				bindgetuserinfo="getUserInfo"
+				loading="{{loading2}}"
 				wx:if="{{canUserInfo}}"
 		>
 			已授权，本次获取你信息不需要授权，登录
@@ -18,6 +19,7 @@
 				type="warn"
 				open-type="getUserInfo"
 				bindgetuserinfo="getUserInfo"
+				loading="{{loading3}}"
 				wx:if="{{!canUserInfo}}"
 		>
 			未授权，需要弹窗授权，登录

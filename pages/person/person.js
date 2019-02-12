@@ -3,6 +3,10 @@ Page({
 	data: {
 		name: 'dudu',
 		info: '',
+		// 登出的loading
+		logoutLoading: false,
+		// 注销账户的loading
+		writeoffLoading: false,
 	},
 	onLoad () {
 		console.log('onLoad')
@@ -129,6 +133,9 @@ Page({
 	 * 登出
 	 */
 	getLogout (session) {
+		this.setData({
+			logoutLoading: true,
+		})
 		let self = this;
 		if (!session) {
 			return
@@ -140,6 +147,9 @@ Page({
 				'x-session': session
 			},
 			success(res) {
+				self.setData({
+					logoutLoading: false,
+				})
 				let result = res.data
 				if (!result || !result.success) {
 					wx.showModal({
@@ -170,6 +180,9 @@ Page({
 	 * 注销
 	 */
 	writeOff (session) {
+		this.setData({
+			writeoffLoading: true,
+		})
 		let self = this;
 		if (!session) {
 			return
@@ -181,6 +194,9 @@ Page({
 				'x-session': session
 			},
 			success(res) {
+				self.setData({
+					writeoffLoading: false,
+				})
 				let result = res.data
 				if (!result || !result.success) {
 					wx.showModal({
